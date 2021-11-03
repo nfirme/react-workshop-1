@@ -1,0 +1,77 @@
+:root {
+  --tan: rgb(255, 229, 190);
+  --red: rgb(232, 89, 96);
+  --yellow: rgb(252, 218, 102);
+  --yellow-dark: rgb(235, 201, 93);
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.App {
+  padding: 2em;
+  background-color: var(--tan);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+.grocery-icon {
+  width: 150px;
+}
+
+.search-bar {
+  padding: 8px;
+  font-size: 2em;
+}
+
+.submit-btn {
+  font-size: 1.5em;
+  margin-left: 16px;
+  background-color: var(--yellow);
+  border: none;
+  padding: .5em;
+  border-radius: 10%;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background-color: var(--yellow-dark);
+}
+
+.List {
+  padding-top: 16px;
+}
+
+.list-item {
+  font-size: 2em;
+  list-style-type: none;
+  text-align: center;
+}
+
+.list-item:hover {
+  text-decoration: line-through;
+  cursor: pointer;
+  color: var(--red);
+}
+
+label {
+  display: block;
+}
